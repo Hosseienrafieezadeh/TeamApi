@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Test.Service/1.0.0": {
+        "dependencies": {
+          "Tavv.Contract": "1.0.0",
+          "Test.Entitis": "1.0.0"
+        },
+        "runtime": {
+          "Test.Service.dll": {}
+        }
+      },
+      "Tavv.Contract/1.0.0": {
+        "runtime": {
+          "Tavv.Contract.dll": {}
+        }
+      },
+      "Test.Entitis/1.0.0": {
+        "runtime": {
+          "Test.Entitis.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Test.Service/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Tavv.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Test.Entitis/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

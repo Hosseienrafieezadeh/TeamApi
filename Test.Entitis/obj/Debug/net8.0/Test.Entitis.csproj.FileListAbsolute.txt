@@ -1,0 +1,11 @@
+F:\tav tamrin\Tavv_Test\Test.Entitis\bin\Debug\net8.0\Test.Entitis.deps.json
+F:\tav tamrin\Tavv_Test\Test.Entitis\bin\Debug\net8.0\Test.Entitis.dll
+F:\tav tamrin\Tavv_Test\Test.Entitis\bin\Debug\net8.0\Test.Entitis.pdb
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.GeneratedMSBuildEditorConfig.editorconfig
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.AssemblyInfoInputs.cache
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.AssemblyInfo.cs
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.csproj.CoreCompileInputs.cache
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.dll
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\refint\Test.Entitis.dll
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\Test.Entitis.pdb
+F:\tav tamrin\Tavv_Test\Test.Entitis\obj\Debug\net8.0\ref\Test.Entitis.dll

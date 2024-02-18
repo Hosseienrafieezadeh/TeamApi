@@ -1,0 +1,11 @@
+F:\tav tamrin\Tavv_Test\Tavv.Contract\bin\Debug\net8.0\Tavv.Contract.deps.json
+F:\tav tamrin\Tavv_Test\Tavv.Contract\bin\Debug\net8.0\Tavv.Contract.dll
+F:\tav tamrin\Tavv_Test\Tavv.Contract\bin\Debug\net8.0\Tavv.Contract.pdb
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.GeneratedMSBuildEditorConfig.editorconfig
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.AssemblyInfoInputs.cache
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.AssemblyInfo.cs
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.csproj.CoreCompileInputs.cache
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.dll
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\refint\Tavv.Contract.dll
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\Tavv.Contract.pdb
+F:\tav tamrin\Tavv_Test\Tavv.Contract\obj\Debug\net8.0\ref\Tavv.Contract.dll
