@@ -38,10 +38,9 @@ namespace Test.RestApi.Controllers
         }
 
         [HttpGet("get")]
-        public void Get(GetPlayersDto dto)
+        public List<GetPlayersDto> GetAll([FromQuery] GetplayersFillterDto dto)
         {
-            _service.GetAll(dto);
-
+            return _service.GetAll(dto);
         }
     }
 }

@@ -31,31 +31,30 @@ namespace Test.Persistence.EF.Teams
             _context.Teams.Remove(team);
         }
 
-        public List<team> GetAll(GetTeamDto dto)
+        public List<GetTeamDto> GetAll(GetTeamFilterDto dto)
         {
-            IQueryable<team> query = _context.Teams.Include(_ => _.Players);
-
-            if (!string.IsNullOrEmpty(dto.TeamName))
+            IQueryable<team> query = _context.Teams;
+            if (!string.IsNullOrWhiteSpace(dto.Name))
             {
-                query = query.Where(b => b.TeamName.Contains(dto.TeamName));
+                query = query.Where(_ => _.TeamName.Contains(dto.Name));
             }
-
-            if (dto.TshirSub > 0 && dto.TshirOriginally > 0)
+            if (dto.sub != null)
             {
-                query = query.Where(b => b.TshirSub >= dto.TshirSub && b.TshirOriginally >= dto.TshirOriginally);
+                query = query.Where(_ => _.TshirSub == dto.sub);
             }
-            else if (dto.TshirSub > 0)
+            if (dto.Main != null)
             {
-                query = query.Where(b => b.TshirSub >= dto.TshirSub);
+                query = query.Where(_ => _.TshirOriginally == dto.Main);
             }
-            else if (dto.TshirOriginally > 0)
+            List<GetTeamDto> teams = query.Select(team => new GetTeamDto
             {
-                query = query.Where(b => b.TshirOriginally >= dto.TshirOriginally);
-            }
-
-            return query.ToList();
+                Id= team.Id,
+                TeamName = team.TeamName,
+                TshirOriginally = team.TshirOriginally,
+                TshirSub = team.TshirSub,
+            }).ToList();
+            return teams;
         }
-
 
         public team IsExistTeam(int Id)
         {

@@ -76,3 +76,4 @@ F:\tav tamrin\Tavv_Test\Test.RestApi\obj\Debug\net8.0\refint\Test.RestApi.dll
 F:\tav tamrin\Tavv_Test\Test.RestApi\obj\Debug\net8.0\Test.RestApi.pdb
 F:\tav tamrin\Tavv_Test\Test.RestApi\obj\Debug\net8.0\Test.RestApi.genruntimeconfig.cache
 F:\tav tamrin\Tavv_Test\Test.RestApi\obj\Debug\net8.0\ref\Test.RestApi.dll
+F:\tav tamrin\Tavv_Test\Test.RestApi\obj\Debug\net8.0\Test.RestApi.sourcelink.json

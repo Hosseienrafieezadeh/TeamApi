@@ -57,19 +57,9 @@ namespace Test.Service.Teams
 
         }
 
-        public List<team> GetAll(GetTeamDto dto)
+        public List<GetTeamDto> GetAll(GetTeamFilterDto dto)
         {
-            try
-            {
-
-                var team = _repozitory.GetAll(dto);
-                return team;
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+            return _repozitory.GetAll(dto);
         }
 
         public async Task Update(int id, UpdateTeamDto dto)

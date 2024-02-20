@@ -36,10 +36,9 @@ namespace Test.RestApi.Controllers
         }
 
         [HttpGet("get")]
-        public void Get(GetTeamDto dto)
+        public List<GetTeamDto> GetAll([FromQuery] GetTeamFilterDto dto)
         {
-            _service.GetAll(dto);
-
+            return _service.GetAll(dto);
         }
     }
 }

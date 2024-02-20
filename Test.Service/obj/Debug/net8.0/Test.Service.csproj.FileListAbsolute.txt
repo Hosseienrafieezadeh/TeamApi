@@ -15,3 +15,4 @@ F:\tav tamrin\Tavv_Test\Test.Service\obj\Debug\net8.0\Test.Service.dll
 F:\tav tamrin\Tavv_Test\Test.Service\obj\Debug\net8.0\refint\Test.Service.dll
 F:\tav tamrin\Tavv_Test\Test.Service\obj\Debug\net8.0\Test.Service.pdb
 F:\tav tamrin\Tavv_Test\Test.Service\obj\Debug\net8.0\ref\Test.Service.dll
+F:\tav tamrin\Tavv_Test\Test.Service\obj\Debug\net8.0\Test.Service.sourcelink.json

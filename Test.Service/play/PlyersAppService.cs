@@ -60,17 +60,7 @@ namespace Test.Service.play
 
         public List<GetPlayersDto> GetAll(GetplayersFillterDto dto)
         {
-            try
-            {
-
-                var player = _repozitory.GetAll(dto);
-                return player;
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("An error occurred while fetching books: " + ex.Message);
-            }
+            return _repozitory.GetAll(dto);
         }
 
      

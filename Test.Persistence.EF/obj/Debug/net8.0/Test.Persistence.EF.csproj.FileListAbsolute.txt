@@ -19,3 +19,4 @@ F:\tav tamrin\Tavv_Test\Test.Persistence.EF\obj\Debug\net8.0\refint\Test.Persist
 F:\tav tamrin\Tavv_Test\Test.Persistence.EF\obj\Debug\net8.0\Test.Persistence.EF.pdb
 F:\tav tamrin\Tavv_Test\Test.Persistence.EF\obj\Debug\net8.0\Test.Persistence.EF.genruntimeconfig.cache
 F:\tav tamrin\Tavv_Test\Test.Persistence.EF\obj\Debug\net8.0\ref\Test.Persistence.EF.dll
+F:\tav tamrin\Tavv_Test\Test.Persistence.EF\obj\Debug\net8.0\Test.Persistence.EF.sourcelink.json

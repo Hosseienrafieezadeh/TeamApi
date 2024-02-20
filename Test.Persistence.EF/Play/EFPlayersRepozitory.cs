@@ -35,30 +35,36 @@ namespace Test.Persistence.EF.Play
 
         public List<GetPlayersDto> GetAll(GetplayersFillterDto dto)
         {
+            var players = _context.Players.Include(_ => _.Team)
+               .Select(player => new GetPlayersDto()
+               {
+                   Id = player.Id,
+                   PlayerName = player.PlayerName,
+                  BirthDate = (DateTime.UtcNow - player.Born).Days / 365,
+                    TeamTitle= player.Team.TeamName
 
-            var age = (int)((DateTime.UtcNow - dto.Born).TotalDays / 365);
-            dto.Age = age;
-            var pp = _context.Players.Select(_ => new GetPlayersDto() { 
-                
-                PlayerName = _.PlayerName,
-                Id=_.Id
-               
-
-            }).ToList();
-            var findplayer=pp.Where(_=>_.PlayerName.Contains(dto.PlayerName)).ToList();
-
-            if (findplayer is null) 
+               }).ToList();
+            if (!string.IsNullOrWhiteSpace(dto.PlayerName))
             {
-                throw new Exception("not found");
+                players = players.Where(_ => _.PlayerName.Contains(dto.PlayerName)).ToList();
             }
-            return findplayer;
-            
+            if (dto.MaxAge != null)
+            {
+
+                players = players.Where(_ => _.BirthDate < dto.MaxAge).ToList();
+
+            }
+            if (dto.MinAge != null)
+            {
+                players = players.Where(_ => _.BirthDate > dto.MinAge).ToList();
+            }
+            return players;
             //IQueryable<Players> query = _context.Players.Include(_ => _.Team);
             //if (!string.IsNullOrEmpty(dto.PlayerName))
             //{
             //    query = query.Where(b => b.PlayerName.Contains(dto.PlayerName));
             //}
-           
+
             //var age = (int)((DateTime.UtcNow - dto.Born).TotalDays / 365);
             //dto.Age = age; 
             //query = query.Where(b => b.Born >= dto.Born);

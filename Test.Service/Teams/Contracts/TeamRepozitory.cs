@@ -17,7 +17,7 @@ namespace Test.Service.Teams.Contracts
 
         void Update(team team);
         void Delete(team team);
-        List<team> GetAll(GetTeamDto dto);
+        List<GetTeamDto> GetAll(GetTeamFilterDto dto);
 
     }
 }

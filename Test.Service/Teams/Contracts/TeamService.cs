@@ -13,6 +13,6 @@ namespace Test.Service.Teams.Contracts
          Task Add(AddTeamDto dto);
         Task Update(int id,UpdateTeamDto dto);
         Task Delete(int id);
-        List<team> GetAll(GetTeamDto dto);
+        List<GetTeamDto> GetAll(GetTeamFilterDto dto);
     }
 }

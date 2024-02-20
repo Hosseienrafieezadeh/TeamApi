@@ -8,8 +8,9 @@ namespace Test.Service.play.Contracts.Dtos
 {
     public class GetplayersFillterDto
     {
-        public string PlayerName { get; set; }
-        public DateTime Born { get; set; }
-        public int Age { get; set; }
+        public string? PlayerName { get; set; }
+       
+        public int? MinAge { get; set; }
+        public int? MaxAge { get; set; }
     }
 }

@@ -9,6 +9,7 @@ namespace Test.Service.Teams.Contracts.Dtos
 {
     public class GetTeamDto
     {
+        public int Id { get; set; }
         public string TeamName { get; set; }
         public TshirtRGB TshirOriginally { get; set; }
         public TshirtRGB TshirSub { get; set; }
